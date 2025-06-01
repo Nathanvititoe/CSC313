@@ -79,9 +79,9 @@ if __name__ == "__main__":
         Task("LowPriority-2", priority=5, duration=1),
     ]
 
-    # print("\n=== Running with Aging Enabled ===")
-    # scheduler = Scheduler(tasks, enable_aging=True, max_cycles=25)
+    print("\n=== Running with Aging Enabled ===")
+    scheduler = Scheduler(tasks, enable_aging=True, max_cycles=25)
 
-    print("\n=== Running with Aging Disabled ===")
-    scheduler = Scheduler(tasks, enable_aging=False, max_cycles=25)
+    # print("\n=== Running with Aging Disabled ===")
+    # scheduler = Scheduler(tasks, enable_aging=False, max_cycles=25)
     scheduler.start()
